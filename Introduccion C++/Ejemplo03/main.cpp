@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <iostream>
+
+using namespace std;
+
+int main( )
+{
+	int x = 'a';
+	x = x + 1;
+	char c = x;
+	cout << "El valor del int \"x\" es " << x << "." << endl;
+	cout << "El valor del char \"c\" es " << c << "." << endl;
+	
+	return 0;
+}
