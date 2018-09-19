@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="Introduccion C++" Database="" Version="10.0.0">
   <Project Name="Ejemplo01" Path="Ejemplo01/Ejemplo01.project" Active="Yes"/>
+  <Project Name="Ejemplo02" Path="Ejemplo02/Ejemplo02.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
       <Project Name="Ejemplo01" ConfigName="Debug"/>
+      <Project Name="Ejemplo02" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
       <Project Name="Ejemplo01" ConfigName="Release"/>
+      <Project Name="Ejemplo02" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
