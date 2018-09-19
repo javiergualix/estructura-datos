@@ -1,7 +1,14 @@
 #include <stdio.h>
+#include <iostream>
 
-int main(int argc, char **argv)
+int main( )
 {
-	printf("hello world\n");
+	int x;
+	std::cout << "Escribe un numero: ";
+	std::cin >> x;
+	std::cout << "Tu numero es " << x << "\n";
+	std::cout << "Muchas gracias. Escriba algo para terminar." << std::endl;
+	std::cin >> x;
+	
 	return 0;
 }
