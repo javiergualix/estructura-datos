@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <iostream>
-#include <windows.h>
 
 using namespace std;
 
@@ -21,7 +20,7 @@ int main( )
 				cout << c << " pulsado.\n";
 			}
 		} while (test);
-	} while (VK_ESCAPE);
+	} while (c != 27);
 		
 	return 0;
 }
