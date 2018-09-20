@@ -3,11 +3,8 @@
 
 using namespace std;
 
-int *vector( )
+void vector(int* v)
 {
-	int v[10];
-
-	
 	for (int i = 0; i < 10; i++)
 	{
 		cout << "Introduce un entero: " << endl;
@@ -17,24 +14,27 @@ int *vector( )
 		cout << v[i] << endl;
 	}
 	
-	return v;
+	return;
 	
 }
 
-void vervector (int v[])
+void vervector (int* v)
 {
 	for (int i = 0; i < 10; i++)
 	{
 		cout << v[i];
 	}
+	
+	return;
+	
 }
 
 int main( )
 {
-	int* v[10];
-	v[10] = vector();
+	int x[10];
+	vector(x);
 	
-	vervector(v);
+	vervector(x);
 	
 	return 0;
 }
