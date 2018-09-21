@@ -24,9 +24,24 @@ void vervector (int* v)
 	{
 		cout << v[i];
 	}
+	cout << endl;
 	
 	return;
 	
+}
+
+void vectorpuntero (int* v)
+{
+	
+	for (int i = 0; i < 10; i++)
+	{
+		cout << *v;
+		v++;
+	}
+	cout << endl;
+	
+	return;
+	 
 }
 
 int main( )
@@ -35,6 +50,7 @@ int main( )
 	vector(x);
 	
 	vervector(x);
+	vectorpuntero(x);
 	
 	return 0;
 }
