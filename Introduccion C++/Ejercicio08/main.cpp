@@ -1,3 +1,5 @@
+//Escribir un programa que utilice funciones para...
+
 #include <stdio.h>
 #include <iostream>
 
@@ -16,6 +18,26 @@ void vector(int* v)
 	
 	return;
 	
+}
+
+void creavector (int cant,int n[])
+{
+    int i;
+    for(i=0;i<cant;i++)
+    {
+        cout<<"Ingresa numero "<<i+1<<": ";
+        cin>>n[i];
+    }
+     
+}
+
+void muestravector(int cant,int n[])
+{
+    int i;
+    for(i=0;i<cant;i++)
+    {
+        cout<<n[i]<<endl;
+    }
 }
 
 void vervector (int* v)
@@ -99,6 +121,7 @@ void insercionDirecta (int A[])
 int main( )
 {
 	int x[10];
+	int y[10];
 	vector(x);
 	
 	vervector(x);
@@ -112,6 +135,9 @@ int main( )
 	
 	insercionDirecta(x);
 	vervector(x);
+	
+	creavector(10,y);
+	muestravector(10,y);
 	
 	return 0;
 }
