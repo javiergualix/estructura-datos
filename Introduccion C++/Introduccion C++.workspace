@@ -23,7 +23,8 @@
   <Project Name="Ejercicio08Def" Path="Ejercicio08Def/Ejercicio08Def.project" Active="No"/>
   <Project Name="Ejercicio09" Path="Ejercicio09/Ejercicio09.project" Active="No"/>
   <Project Name="Ejercicio10" Path="Ejercicio10/Ejercicio10.project" Active="No"/>
-  <Project Name="Ejercicio11" Path="Ejercicio11/Ejercicio11.project" Active="Yes"/>
+  <Project Name="Ejercicio11" Path="Ejercicio11/Ejercicio11.project" Active="No"/>
+  <Project Name="Ejemplo12" Path="Ejemplo12/Ejemplo12.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -51,6 +52,7 @@
       <Project Name="Ejercicio09" ConfigName="Debug"/>
       <Project Name="Ejercicio10" ConfigName="Debug"/>
       <Project Name="Ejercicio11" ConfigName="Debug"/>
+      <Project Name="Ejemplo12" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -78,6 +80,7 @@
       <Project Name="Ejercicio09" ConfigName="Release"/>
       <Project Name="Ejercicio10" ConfigName="Release"/>
       <Project Name="Ejercicio11" ConfigName="Release"/>
+      <Project Name="Ejemplo12" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
