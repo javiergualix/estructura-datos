@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=guali
-Date                   :=02/10/2018
+Date                   :=13/10/2018
 CodeLitePath           :="C:/Program Files/CodeLite"
 LinkerName             :=C:/TDM-GCC-64/bin/g++.exe
 SharedObjectLinkerName :=C:/TDM-GCC-64/bin/g++.exe -shared -fPIC
@@ -62,7 +62,7 @@ AS       := C:/TDM-GCC-64/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=$(IntermediateDirectory)/Ccomplejo.cpp$(ObjectSuffix) $(IntermediateDirectory)/main.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/Ccomplejo.cpp$(ObjectSuffix) 
 
 
 
@@ -93,14 +93,6 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/Ccomplejo.cpp$(ObjectSuffix): Ccomplejo.cpp $(IntermediateDirectory)/Ccomplejo.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/guali/Documents/GitHub/estructura-datos/POO en C++/Ejemplo1/Ccomplejo.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Ccomplejo.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Ccomplejo.cpp$(DependSuffix): Ccomplejo.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Ccomplejo.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Ccomplejo.cpp$(DependSuffix) -MM Ccomplejo.cpp
-
-$(IntermediateDirectory)/Ccomplejo.cpp$(PreprocessSuffix): Ccomplejo.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Ccomplejo.cpp$(PreprocessSuffix) Ccomplejo.cpp
-
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp $(IntermediateDirectory)/main.cpp$(DependSuffix)
 	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/guali/Documents/GitHub/estructura-datos/POO en C++/Ejemplo1/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(DependSuffix): main.cpp
@@ -108,6 +100,14 @@ $(IntermediateDirectory)/main.cpp$(DependSuffix): main.cpp
 
 $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) main.cpp
+
+$(IntermediateDirectory)/Ccomplejo.cpp$(ObjectSuffix): Ccomplejo.cpp $(IntermediateDirectory)/Ccomplejo.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/guali/Documents/GitHub/estructura-datos/POO en C++/Ejemplo1/Ccomplejo.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Ccomplejo.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/Ccomplejo.cpp$(DependSuffix): Ccomplejo.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Ccomplejo.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Ccomplejo.cpp$(DependSuffix) -MM Ccomplejo.cpp
+
+$(IntermediateDirectory)/Ccomplejo.cpp$(PreprocessSuffix): Ccomplejo.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Ccomplejo.cpp$(PreprocessSuffix) Ccomplejo.cpp
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

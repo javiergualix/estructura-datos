@@ -1,11 +1,13 @@
 #include <stdio.h>
-#include <Ccomplejo.h>
+#include <iostream>
+#include <conio.h>
+#include "Ccomplejo.h"
 
 int main(int argc, char **argv)
 {
-	Ccomplejo a, b, s;
-	Ccomplejo[10];
-	Ccomplejo* pc;
+	CComplejo a, b, s;
+	CComplejo v[10];
+	CComplejo* pc;
 	
-	pc = new Ccomplejo;
+	pc = new CComplejo;
 }

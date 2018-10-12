@@ -1,21 +1,21 @@
 #include "Ccomplejo.h"
 
-Ccomplejo::Ccomplejo()
+CComplejo::CComplejo() //implementación
 {
 	real = 1;
 	imag = 0;
 }
 
-Ccomplejo::~Ccomplejo()
-{
+CComplejo::~CComplejo()
+{ //destruir el número complejo
 }
 
-Ccomplejo::asigna_real (double r)
+void CComplejo::asigna_real (double r) //HAY QUE ESPECIFICAR EL TIPO
 {
 	real = r;
 }
 
-void Ccomplejo::suma (const Ccomplejo& a, const Ccomplejo& b)
+void CComplejo::suma (const CComplejo& a, const CComplejo& b)
 {
 	real = a.real + b.real;
 	imag = a.imag + b.imag;
