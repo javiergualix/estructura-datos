@@ -7,9 +7,8 @@ using namespace std;
 
 void creavector (int cant,int n[]) //Leer un vector de 10 enteros
 {
-    int i;
 	
-    for(i = 0; i < cant; i++)
+    for(int i = 0; i < cant; i++)
     {
         cout << "Ingresa numero " << i+1 <<": ";
         cin >> n[i];
@@ -19,21 +18,20 @@ void creavector (int cant,int n[]) //Leer un vector de 10 enteros
 
 void muestravector(int cant,int n[]) //Visualizar en pantalla el vector leído utilizando una variable entera
 {
-    int i;
 	
-    for (i = 0; i < cant; i++)
+    for (int i = 0; i < cant; i++)
     {
         cout << n[i] << endl;
     }
 	
 }
 
-void vectorpuntero (int* v) //Visualizar en pantalla el vector leído utilizando una variable de tipo puntero
+void vectorpuntero (int cant, int* v) //Visualizar en pantalla el vector leído utilizando una variable de tipo puntero
 {
 	
-	for (int i = 0; i < 10; i++)
+	for (int i = 0; i < cant; i++)
 	{
-		cout << *v;
+		cout << *v << endl;
 		v++;
 	}
 	cout << endl;
@@ -42,11 +40,11 @@ void vectorpuntero (int* v) //Visualizar en pantalla el vector leído utilizando
 	 
 }
 
-int maximo (int* v) //Ver el máximo del vector
+int maximo (int cant, int* v) //Ver el máximo del vector
 {
 	int max = v[0];
 	
-	for (int i = 0; i < 10; i++)
+	for (int i = 0; i < cant; i++)
 	{
 		if (v[i] > max)
 		{
@@ -57,11 +55,11 @@ int maximo (int* v) //Ver el máximo del vector
 	return max;
 }
 
-int minimo (int* v) //Ver el mínimo del vector
+int minimo (int cant, int* v) //Ver el mínimo del vector
 {
 	int min = v[0];
 	
-	for (int i = 0; i < 10; i++)
+	for (int i = 0; i < cant; i++)
 	{
 		if (v[i] < min)
 		{
@@ -99,14 +97,17 @@ int main( )
 	
 	creavector(10, x);
 	muestravector(10, x);
+	cout << "El vector visto con un puntero es... \n \n";
+	vectorpuntero(10, x);
 	
-	int m = maximo(x);
+	int m = maximo(10, x);
 	cout << "El valor maximo es " << m << endl;
 	
-	int n = minimo(x);
+	int n = minimo(10, x);
 	cout << "El valor minimo es " << n << endl;
 	
 	insercionDirecta(x);
+	muestravector(10,x);
 	
 	return 0;
 }

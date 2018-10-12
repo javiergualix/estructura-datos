@@ -20,14 +20,14 @@
   <Project Name="Ejemplo10" Path="Ejemplo10/Ejemplo10.project" Active="No"/>
   <Project Name="Ejemplo11" Path="Ejemplo11/Ejemplo11.project" Active="No"/>
   <Project Name="Ejercicio08" Path="Ejercicio08/Ejercicio08.project" Active="No"/>
-  <Project Name="Ejercicio08Def" Path="Ejercicio08Def/Ejercicio08Def.project" Active="No"/>
+  <Project Name="Ejercicio08Def" Path="Ejercicio08Def/Ejercicio08Def.project" Active="Yes"/>
   <Project Name="Ejercicio09" Path="Ejercicio09/Ejercicio09.project" Active="No"/>
   <Project Name="Ejercicio10" Path="Ejercicio10/Ejercicio10.project" Active="No"/>
   <Project Name="Ejercicio11" Path="Ejercicio11/Ejercicio11.project" Active="No"/>
   <Project Name="Ejemplo12" Path="Ejemplo12/Ejemplo12.project" Active="No"/>
   <Project Name="Ejemplo12b" Path="Ejemplo12b/Ejemplo12b.project" Active="No"/>
   <Project Name="Ejercicio12" Path="Ejercicio12/Ejercicio12.project" Active="No"/>
-  <Project Name="Ejercicio13" Path="Ejercicio13/Ejercicio13.project" Active="Yes"/>
+  <Project Name="Ejercicio13" Path="Ejercicio13/Ejercicio13.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
