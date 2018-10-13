@@ -93,6 +93,8 @@
     </Configuration>
   </Settings>
   <VirtualDirectory Name="src">
+    <File Name="CVectorComp.cpp"/>
+    <File Name="CVectorComp.h"/>
     <File Name="Ccomplejo.cpp"/>
     <File Name="Ccomplejo.h"/>
     <File Name="main.cpp"/>

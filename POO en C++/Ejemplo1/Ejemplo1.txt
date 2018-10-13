@@ -1,1 +1,1 @@
-./Debug/main.cpp.o ./Debug/Ccomplejo.cpp.o   
+./Debug/main.cpp.o ./Debug/CVectorComp.cpp.o ./Debug/Ccomplejo.cpp.o   

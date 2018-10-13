@@ -62,7 +62,7 @@ AS       := C:/TDM-GCC-64/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/Ccomplejo.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/CVectorComp.cpp$(ObjectSuffix) $(IntermediateDirectory)/Ccomplejo.cpp$(ObjectSuffix) 
 
 
 
@@ -100,6 +100,14 @@ $(IntermediateDirectory)/main.cpp$(DependSuffix): main.cpp
 
 $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) main.cpp
+
+$(IntermediateDirectory)/CVectorComp.cpp$(ObjectSuffix): CVectorComp.cpp $(IntermediateDirectory)/CVectorComp.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/guali/Documents/GitHub/estructura-datos/POO en C++/Ejemplo1/CVectorComp.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/CVectorComp.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/CVectorComp.cpp$(DependSuffix): CVectorComp.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/CVectorComp.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/CVectorComp.cpp$(DependSuffix) -MM CVectorComp.cpp
+
+$(IntermediateDirectory)/CVectorComp.cpp$(PreprocessSuffix): CVectorComp.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/CVectorComp.cpp$(PreprocessSuffix) CVectorComp.cpp
 
 $(IntermediateDirectory)/Ccomplejo.cpp$(ObjectSuffix): Ccomplejo.cpp $(IntermediateDirectory)/Ccomplejo.cpp$(DependSuffix)
 	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/guali/Documents/GitHub/estructura-datos/POO en C++/Ejemplo1/Ccomplejo.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Ccomplejo.cpp$(ObjectSuffix) $(IncludePath)
