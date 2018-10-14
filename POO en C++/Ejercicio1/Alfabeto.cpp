@@ -29,3 +29,88 @@ void Alfabeto::Imprimir()
 	cout << sizeof(v);
 }
 
+bool Alfabeto::es_vacio()
+{
+	int i = 0;
+	
+	while ((i < sizeof(v)) && (!v[i]))
+	{
+		if (!v[i])
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+}
+
+bool Alfabeto::pertenece?(char c)
+{
+	int pos;
+	
+	for (int i = 0; i < sizeof(abc); i++)
+	{
+		if (abc[i] == c)
+		{
+			pos = i;
+		}
+	}
+	
+	if (v[pos] == true)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+
+void Alfabeto::insertar(char c)
+{
+	int pos	
+	
+	if (pertenece(c))
+	{
+		cout << "El caracter ya existe en el conjunto" << endl;
+	}
+	else
+	{
+		for (int i = 0; i < sizeof(abc); i++)
+		{
+			if (abc[i] == c)
+			{
+				pos = i;
+			}
+		}
+		
+		v[pos] = true;
+		
+	}
+}
+
+void Alfabeto::eliminar(char c)
+{
+	int pos	
+	
+	if (!pertenece(c))
+	{
+		cout << "El caracter no existe en el conjunto" << endl;
+	}
+	else
+	{
+		for (int i = 0; i < sizeof(abc); i++)
+		{
+			if (abc[i] == c)
+			{
+				pos = i;
+			}
+		}
+		
+		v[pos] = false;
+		
+	}
+}
+
