@@ -62,7 +62,7 @@ AS       := C:/TDM-GCC-64/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=$(IntermediateDirectory)/Alfabeto.cpp$(ObjectSuffix) $(IntermediateDirectory)/main.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/Alfabeto.cpp$(ObjectSuffix) 
 
 
 
@@ -93,14 +93,6 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/Alfabeto.cpp$(ObjectSuffix): Alfabeto.cpp $(IntermediateDirectory)/Alfabeto.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/guali/Documents/GitHub/estructura-datos/POO en C++/Ejercicio1/Alfabeto.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Alfabeto.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Alfabeto.cpp$(DependSuffix): Alfabeto.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Alfabeto.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Alfabeto.cpp$(DependSuffix) -MM Alfabeto.cpp
-
-$(IntermediateDirectory)/Alfabeto.cpp$(PreprocessSuffix): Alfabeto.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Alfabeto.cpp$(PreprocessSuffix) Alfabeto.cpp
-
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp $(IntermediateDirectory)/main.cpp$(DependSuffix)
 	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/guali/Documents/GitHub/estructura-datos/POO en C++/Ejercicio1/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(DependSuffix): main.cpp
@@ -108,6 +100,14 @@ $(IntermediateDirectory)/main.cpp$(DependSuffix): main.cpp
 
 $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) main.cpp
+
+$(IntermediateDirectory)/Alfabeto.cpp$(ObjectSuffix): Alfabeto.cpp $(IntermediateDirectory)/Alfabeto.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/guali/Documents/GitHub/estructura-datos/POO en C++/Ejercicio1/Alfabeto.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Alfabeto.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/Alfabeto.cpp$(DependSuffix): Alfabeto.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Alfabeto.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Alfabeto.cpp$(DependSuffix) -MM Alfabeto.cpp
+
+$(IntermediateDirectory)/Alfabeto.cpp$(PreprocessSuffix): Alfabeto.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Alfabeto.cpp$(PreprocessSuffix) Alfabeto.cpp
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

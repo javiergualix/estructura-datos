@@ -1,1 +1,1 @@
-./Debug/Alfabeto.cpp.o ./Debug/main.cpp.o   
+./Debug/main.cpp.o ./Debug/Alfabeto.cpp.o   

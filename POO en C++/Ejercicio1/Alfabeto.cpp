@@ -10,7 +10,7 @@ Alfabeto::Alfabeto()
 	
 	for (int i= 0; i < 26; i++)
 	{
-		v[i] = true;
+		v[i] = false;
 	}
 
 }
@@ -26,7 +26,7 @@ void Alfabeto::Imprimir()
 		cout << v[j] << endl;
 	}
 	
-	cout << sizeof(v);
+	//cout << sizeof(v) << endl;
 }
 
 bool Alfabeto::es_vacio()
@@ -46,7 +46,7 @@ bool Alfabeto::es_vacio()
 	}
 }
 
-bool Alfabeto::pertenece?(char c)
+bool Alfabeto::pertenece(char c)
 {
 	int pos;
 	
@@ -70,7 +70,7 @@ bool Alfabeto::pertenece?(char c)
 
 void Alfabeto::insertar(char c)
 {
-	int pos	
+	int pos;
 	
 	if (pertenece(c))
 	{
@@ -93,7 +93,7 @@ void Alfabeto::insertar(char c)
 
 void Alfabeto::eliminar(char c)
 {
-	int pos	
+	int pos;
 	
 	if (!pertenece(c))
 	{
