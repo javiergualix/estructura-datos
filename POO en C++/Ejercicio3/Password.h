@@ -15,7 +15,7 @@ public:
 	bool es_Password();
 	bool es_Fuerte();
 	void cifrar_Password();
-	bool es_Correcta();
+	bool es_Correcta(char a[8]);
 
 };
 
