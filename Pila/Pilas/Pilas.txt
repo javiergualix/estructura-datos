@@ -1,0 +1,1 @@
+./Debug/Nodo.cpp.o ./Debug/Pila.cpp.o ./Debug/main.cpp.o   

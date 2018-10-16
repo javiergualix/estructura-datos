@@ -111,7 +111,7 @@
     <TabInfo>
       <wxString Value="C:\Users\guali\Documents\GitHub\estructura-datos\POO en C++\Ejercicio3\main.cpp" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="23" Name="CurrentLine"/>
+      <int Value="9" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
