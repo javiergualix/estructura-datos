@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=guali
-Date                   :=13/10/2018
+Date                   :=16/10/2018
 CodeLitePath           :="C:/Program Files/CodeLite"
 LinkerName             :=C:/TDM-GCC-64/bin/g++.exe
 SharedObjectLinkerName :=C:/TDM-GCC-64/bin/g++.exe -shared -fPIC
@@ -62,7 +62,7 @@ AS       := C:/TDM-GCC-64/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=$(IntermediateDirectory)/Fraccion.cpp$(ObjectSuffix) $(IntermediateDirectory)/main.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/Fraccion.cpp$(ObjectSuffix) 
 
 
 
@@ -93,14 +93,6 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/Fraccion.cpp$(ObjectSuffix): Fraccion.cpp $(IntermediateDirectory)/Fraccion.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/guali/Documents/GitHub/estructura-datos/POO en C++/Ejercicio2/Fraccion.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Fraccion.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Fraccion.cpp$(DependSuffix): Fraccion.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Fraccion.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Fraccion.cpp$(DependSuffix) -MM Fraccion.cpp
-
-$(IntermediateDirectory)/Fraccion.cpp$(PreprocessSuffix): Fraccion.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Fraccion.cpp$(PreprocessSuffix) Fraccion.cpp
-
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp $(IntermediateDirectory)/main.cpp$(DependSuffix)
 	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/guali/Documents/GitHub/estructura-datos/POO en C++/Ejercicio2/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(DependSuffix): main.cpp
@@ -108,6 +100,14 @@ $(IntermediateDirectory)/main.cpp$(DependSuffix): main.cpp
 
 $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) main.cpp
+
+$(IntermediateDirectory)/Fraccion.cpp$(ObjectSuffix): Fraccion.cpp $(IntermediateDirectory)/Fraccion.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/guali/Documents/GitHub/estructura-datos/POO en C++/Ejercicio2/Fraccion.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Fraccion.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/Fraccion.cpp$(DependSuffix): Fraccion.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Fraccion.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Fraccion.cpp$(DependSuffix) -MM Fraccion.cpp
+
+$(IntermediateDirectory)/Fraccion.cpp$(PreprocessSuffix): Fraccion.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Fraccion.cpp$(PreprocessSuffix) Fraccion.cpp
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
