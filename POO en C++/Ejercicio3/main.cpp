@@ -20,11 +20,11 @@ int main(int argc, char **argv)
 	cout << pass.es_Correcta("hola") << endl;
 	//delete pass;
 	
-	//Password pass2;
-	//pass2.ver_Password();
+	Password pass2;
+	pass2.ver_Password();
 	
-	//Password pass3;
-	//pass3.ver_Password();
+	Password pass3;
+	pass3.ver_Password();
 	
 	return 0;
 }

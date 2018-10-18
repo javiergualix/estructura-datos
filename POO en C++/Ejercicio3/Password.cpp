@@ -11,7 +11,6 @@ Password::Password()
 	int low = 33;
 	int high = 123;
 	int random;
-	srand((unsigned)time(0));
 	
 	for (int i = 0; i < (sizeof(pass)); i++)
 	{
