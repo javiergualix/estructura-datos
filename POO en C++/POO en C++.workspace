@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="POO en C++" Database="" Version="10.0.0">
   <Project Name="Ejemplo1" Path="Ejemplo1/Ejemplo1.project" Active="No"/>
-  <Project Name="Ejercicio2" Path="Ejercicio2/Ejercicio2.project" Active="Yes"/>
+  <Project Name="Ejercicio2" Path="Ejercicio2/Ejercicio2.project" Active="No"/>
   <Project Name="Ejercicio1" Path="Ejercicio1/Ejercicio1.project" Active="No"/>
-  <Project Name="Ejercicio3" Path="Ejercicio3/Ejercicio3.project" Active="No"/>
+  <Project Name="Ejercicio3" Path="Ejercicio3/Ejercicio3.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
