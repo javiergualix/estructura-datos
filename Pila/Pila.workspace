@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="Pila" Database="" Version="10.0.0">
-  <Project Name="Pilas" Path="Pilas/Pilas.project" Active="Yes"/>
+  <Project Name="Pilas" Path="Pilas/Pilas.project" Active="No"/>
+  <Project Name="Colas" Path="Colas/Colas.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
       <Project Name="Pilas" ConfigName="Debug"/>
+      <Project Name="Colas" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
       <Project Name="Pilas" ConfigName="Release"/>
+      <Project Name="Colas" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
